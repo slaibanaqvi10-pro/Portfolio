@@ -3,6 +3,9 @@
 A clean, modern, and elegant personal portfolio website showcasing my work as a **Frontend Developer & Aspiring Data Analyst**.
 
 🔗 **Live Site:** http://127.0.0.1:5500/index.html#projects
+<img width="1349" height="644" alt="WhatsApp Image 2026-08-14 at 12 40 08 AM" src="https://github.com/user-attachments/assets/1f75f650-e633-4f92-b7d9-f353774535b2" />
+<img width="1326" height="638" alt="WhatsApp Image 2026-08-14 at 12 40 32 AM" src="https://github.com/user-attachments/assets/44d89657-eed2-4c91-a682-e50033b981a0" />
+<img width="1325" height="630" alt="WhatsApp Image 2026-08-14 at 12 41 15 AM" src="https://github.com/user-attachments/assets/2c72e402-5a53-42f5-803f-924989e87c16" />
 <img width="1316" height="630" alt="WhatsApp Image 2026-08-14 at 12 41 38 AM" src="https://github.com/user-attachments/assets/adf1b369-99a6-4c77-9d8c-c2e3b514d768" />
 
 
