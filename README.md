@@ -2,14 +2,16 @@
 
 A clean, modern, and elegant personal portfolio website showcasing my work as a **Frontend Developer & Aspiring Data Analyst**.
 
-🔗 **Live Site:** [http://127.0.0.1:5500/index.html#projects](https://github.com/slaibanaqvi10-pro/Portfolio/)
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/639732c9-1d45-4619-8048-cefda2a94e39" />
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/af20c563-a4b7-43bf-a771-cfb96271dc8f" />
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/3d889d3b-01d7-4211-9b34-faf6fdd55590" />
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/ecc7d660-636c-4289-8ebb-f0f6a13ce60e" />
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/676c2e41-9186-47db-af4a-06403ba2e35e" />
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/97029aa6-f609-4c44-89be-5f3a070fb9b9" />
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/28a7bbbd-6489-43dc-a8a6-9bcdead1ebdb" />
+🔗 **Live Site:** (https://portfolio-1-iota-snowy.vercel.app)
+<img width="1340" height="636" alt="image" src="https://github.com/user-attachments/assets/f661f298-e3db-49e9-bd1e-d0215d9324a7" />
+<img width="1331" height="630" alt="image" src="https://github.com/user-attachments/assets/592779ee-752c-47b2-9c0a-cda491048651" />
+<img width="1319" height="634" alt="image" src="https://github.com/user-attachments/assets/f9df8186-26bc-4119-9385-3f5f7fb8610f" />
+<img width="1337" height="639" alt="image" src="https://github.com/user-attachments/assets/7714d2f3-5b7f-46f8-adea-9e7b8de025fa" />
+<img width="1321" height="633" alt="image" src="https://github.com/user-attachments/assets/ce368595-8577-4356-b34e-4c9a3de56c6a" />
+<img width="1332" height="593" alt="image" src="https://github.com/user-attachments/assets/57ec7881-1fb3-458b-a57f-e29a3468ca8f" />
+<img width="1325" height="599" alt="image" src="https://github.com/user-attachments/assets/50683ab5-d06a-40bf-a590-6091b86c9d79" />
+
+
 
 
 
