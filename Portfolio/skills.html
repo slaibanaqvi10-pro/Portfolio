@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Skills | Laiba Batool</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        /* =========================
+           COLOR PALETTE
+        ========================== */
+
+        :root {
+            --dusty-rose: #C98FA3;
+            --soft-pink: #E8C7D1;
+            --lavender: #C9B8D9;
+            --off-white: #FAF7F5;
+            --charcoal: #29252A;
+        }
+
+
+        /* =========================
+           SKILLS PAGE
+        ========================== */
+
+        .skills-page {
+            min-height: calc(100vh - 160px);
+            background: var(--off-white);
+            padding: 90px 7% 100px;
+        }
+
+        .skills-container {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+
+        /* Heading */
+
+        .skills-label {
+            color: var(--dusty-rose);
+            font-family: "Poppins", sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .skills-title {
+            font-family: "Playfair Display", serif;
+            color: var(--charcoal);
+            font-size: clamp(2.8rem, 5vw, 4rem);
+            line-height: 1.1;
+            margin: 0 0 50px;
+        }
+
+        .skills-title span {
+            color: var(--dusty-rose);
+        }
+
+
+        /* =========================
+           SKILLS GRID
+        ========================== */
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+
+        /* Skill Card */
+
+        .skill-card {
+            background: #FFFFFF;
+            border: 1px solid var(--soft-pink);
+            border-radius: 22px;
+            padding: 28px 25px;
+
+            box-shadow: 0 8px 25px rgba(41, 37, 42, 0.06);
+
+            transition: all 0.3s ease;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-6px);
+            border-color: var(--lavender);
+            box-shadow: 0 15px 35px rgba(201, 143, 163, 0.16);
+        }
+
+
+        /* Skill Header */
+
+        .skill-header {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 25px;
+        }
+
+
+        .skill-icon {
+            width: 46px;
+            height: 46px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background: var(--soft-pink);
+            color: var(--charcoal);
+
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+
+
+        .skill-name {
+            font-family: "Playfair Display", serif;
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--charcoal);
+        }
+
+
+        /* Progress Bar */
+
+        .progress-container {
+            width: 100%;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 7px;
+
+            background: #EEE4E8;
+
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+
+            background: linear-gradient(
+                90deg,
+                var(--dusty-rose),
+                var(--lavender)
+            );
+
+            border-radius: 20px;
+        }
+
+
+        .skill-percentage {
+            display: block;
+            text-align: right;
+
+            margin-top: 8px;
+
+            font-family: "Poppins", sans-serif;
+            font-size: 12px;
+            font-weight: 500;
+
+            color: #756D72;
+        }
+
+
+        /* =========================
+           ACTIVE NAV
+        ========================== */
+
+        .nav-links a.active {
+            color: var(--dusty-rose) !important;
+        }
+
+        .nav-links a.active::after {
+            width: 100% !important;
+            background: var(--dusty-rose) !important;
+        }
+
+
+        /* =========================
+           RESPONSIVE
+        ========================== */
+
+        @media (max-width: 900px) {
+
+            .skills-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+
+        @media (max-width: 600px) {
+
+            .skills-page {
+                padding: 65px 22px 80px;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .skills-title {
+                margin-bottom: 35px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- Background Decoration -->
+
+    <div class="bg-decor" aria-hidden="true">
+        <span class="decor-blob blob-1"></span>
+        <span class="decor-blob blob-2"></span>
+    </div>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="navbar" id="navbar">
+
+        <div class="nav-inner">
+
+            <!-- Logo -->
+
+            <a href="index.html" class="logo">
+                Laiba <span>Batool</span>
+            </a>
+
+
+            <!-- Navigation -->
+
+            <nav class="nav-links" id="navLinks">
+
+                <a href="index.html">Home</a>
+
+                <a href="about.html">About</a>
+
+                <a href="skills.html" class="active">
+                    Skills
+                </a>
+
+                <a href="projects.html">
+                    Projects
+                </a>
+
+                <a href="resume.html">
+                    Resume
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </nav>
+
+
+            <!-- Navbar Actions -->
+
+            <div class="nav-actions">
+
+                <button
+                    id="themeToggle"
+                    class="theme-toggle"
+                    aria-label="Toggle dark mode">
+                    🌙
+                </button>
+
+
+                <a
+                    href="contact.html"
+                    class="btn btn-small btn-primary">
+                    Let's Talk →
+                </a>
+
+
+                <button
+                    class="nav-burger"
+                    id="navBurger"
+                    aria-label="Open menu"
+                    aria-expanded="false">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         SKILLS SECTION
+    ========================== -->
+
+    <main class="skills-page">
+
+        <div class="skills-container">
+
+            <p class="skills-label">
+                What I work with
+            </p>
+
+
+            <h1 class="skills-title">
+                Skills <span>&amp;</span> Tools
+            </h1>
+
+
+            <div class="skills-grid">
+
+
+                <!-- HTML & CSS -->
+
+                <div class="skill-card">
+
+                    <div class="skill-header">
+
+                        <div class="skill-icon">
+                            &lt;/&gt;
+                        </div>
+
+                        <div class="skill-name">
+                            HTML &amp; CSS
+                        </div>
+
+                    </div>
+
+                    <div class="progress-container">
+
+                        <div class="progress-bar">
+                            <div
+                                class="progress-fill"
+                                style="width: 92%;">
+                            </div>
+                        </div>
+
+                        <span class="skill-percentage">
+                            92%
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SQL -->
+
+                <div class="skill-card">
+
+                    <div class="skill-header">
+
+                        <div class="skill-icon">
+                            ◉
+                        </div>
+
+                        <div class="skill-name">
+                            SQL &amp; Databases
+                        </div>
+
+                    </div>
+
+                    <div class="progress-container">
+
+                        <div class="progress-bar">
+                            <div
+                                class="progress-fill"
+                                style="width: 90%;">
+                            </div>
+                        </div>
+
+                        <span class="skill-percentage">
+                            90%
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- JavaScript -->
+
+                <div class="skill-card">
+
+                    <div class="skill-header">
+
+                        <div class="skill-icon">
+                            JS
+                        </div>
+
+                        <div class="skill-name">
+                            JavaScript
+                        </div>
+
+                    </div>
+
+                    <div class="progress-container">
+
+                        <div class="progress-bar">
+                            <div
+                                class="progress-fill"
+                                style="width: 70%;">
+                            </div>
+                        </div>
+
+                        <span class="skill-percentage">
+                            70%
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Python -->
+
+                <div class="skill-card">
+
+                    <div class="skill-header">
+
+                        <div class="skill-icon">
+                            🐍
+                        </div>
+
+                        <div class="skill-name">
+                            Python
+                        </div>
+
+                    </div>
+
+                    <div class="progress-container">
+
+                        <div class="progress-bar">
+                            <div
+                                class="progress-fill"
+                                style="width: 70%;">
+                            </div>
+                        </div>
+
+                        <span class="skill-percentage">
+                            70%
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- MS Office -->
+
+                <div class="skill-card">
+
+                    <div class="skill-header">
+
+                        <div class="skill-icon">
+                            📊
+                        </div>
+
+                        <div class="skill-name">
+                            MS Office
+                        </div>
+
+                    </div>
+
+                    <div class="progress-container">
+
+                        <div class="progress-bar">
+                            <div
+                                class="progress-fill"
+                                style="width: 90%;">
+                            </div>
+                        </div>
+
+                        <span class="skill-percentage">
+                            90%
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Shopify -->
+
+                <div class="skill-card">
+
+                    <div class="skill-header">
+
+                        <div class="skill-icon">
+                            🛍️
+                        </div>
+
+                        <div class="skill-name">
+                            Shopify Operations
+                        </div>
+
+                    </div>
+
+                    <div class="progress-container">
+
+                        <div class="progress-bar">
+                            <div
+                                class="progress-fill"
+                                style="width: 95%;">
+                            </div>
+                        </div>
+
+                        <span class="skill-percentage">
+                            95%
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="section-inner footer-inner">
+
+            <p>
+                🌷 Designed &amp; built by Laiba Batool
+            </p>
+
+            <p>
+                &copy;
+                <span id="year"></span>
+                All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Scroll Top -->
+
+    <button
+        id="scrollTop"
+        class="scroll-top"
+        aria-label="Scroll to top">
+        ↑
+    </button>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

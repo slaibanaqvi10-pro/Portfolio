@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About | Laiba Batool</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Existing CSS -->
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- ABOUT PAGE ONLY -->
+    <style>
+
+        /* =========================
+           COLOR PALETTE
+        ========================== */
+
+        :root {
+            --dusty-rose: #C98FA3;
+            --soft-pink: #E8C7D1;
+            --lavender: #C9B8D9;
+            --off-white: #FAF7F5;
+            --charcoal: #29252A;
+            --light-bg: #F8F2F5;
+        }
+
+
+        /* =========================
+           ABOUT PAGE
+        ========================== */
+
+        .about-page {
+            min-height: calc(100vh - 160px);
+            background: var(--off-white);
+            color: var(--charcoal);
+            padding: 100px 7% 90px;
+        }
+
+
+        .about-container {
+            width: 100%;
+            max-width: 1150px;
+            margin: auto;
+        }
+
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 1fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+
+        /* =========================
+           LEFT SIDE
+        ========================== */
+
+        .about-label {
+            color: var(--dusty-rose);
+            font-family: "Poppins", sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 18px;
+        }
+
+
+        .about-title {
+            font-family: "Playfair Display", serif;
+            font-size: clamp(3rem, 5vw, 4.4rem);
+            line-height: 1.1;
+            color: var(--charcoal);
+            margin: 0 0 25px;
+            font-weight: 700;
+        }
+
+
+        .about-title span {
+            color: var(--dusty-rose);
+        }
+
+
+        .about-description {
+            font-family: "Poppins", sans-serif;
+            color: #665F64;
+            font-size: 15px;
+            line-height: 1.9;
+            max-width: 650px;
+            margin-bottom: 18px;
+        }
+
+
+        /* =========================
+           BUTTONS
+        ========================== */
+
+        .about-buttons {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+
+        .about-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-family: "Poppins", sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+
+        .about-btn-primary {
+            background: var(--dusty-rose);
+            color: var(--off-white);
+            box-shadow: 0 8px 20px rgba(201, 143, 163, 0.25);
+        }
+
+
+        .about-btn-primary:hover {
+            background: #B97890;
+            transform: translateY(-3px);
+        }
+
+
+        .about-btn-outline {
+            background: transparent;
+            color: var(--charcoal);
+            border: 1px solid var(--dusty-rose);
+        }
+
+
+        .about-btn-outline:hover {
+            background: var(--soft-pink);
+            transform: translateY(-3px);
+        }
+
+
+        /* =========================
+           STATS
+        ========================== */
+
+        .about-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+
+        .about-stat {
+            min-height: 145px;
+            padding: 22px 12px;
+            border-radius: 22px;
+
+            background: linear-gradient(
+                145deg,
+                #FFFFFF,
+                var(--light-bg)
+            );
+
+            border: 1px solid var(--soft-pink);
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+
+            box-shadow: 0 10px 30px rgba(41, 37, 42, 0.06);
+
+            transition: all 0.3s ease;
+        }
+
+
+        .about-stat:hover {
+            transform: translateY(-7px);
+            border-color: var(--lavender);
+            box-shadow: 0 15px 35px rgba(201, 143, 163, 0.15);
+        }
+
+
+        .stat-number {
+            font-family: "Playfair Display", serif;
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--dusty-rose);
+            margin-bottom: 8px;
+        }
+
+
+        .stat-text {
+            color: #716A70;
+            font-family: "Poppins", sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+
+        /* =========================
+           WHAT I BRING
+        ========================== */
+
+        .about-info {
+            margin-top: 80px;
+            padding-top: 45px;
+            border-top: 1px solid var(--soft-pink);
+        }
+
+
+        .about-info-title {
+            font-family: "Playfair Display", serif;
+            color: var(--charcoal);
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
+
+
+        .about-info-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+
+        .info-item {
+            padding: 25px;
+            background: #FFFFFF;
+            border: 1px solid var(--soft-pink);
+            border-radius: 18px;
+
+            box-shadow: 0 8px 25px rgba(41, 37, 42, 0.05);
+
+            transition: all 0.3s ease;
+        }
+
+
+        .info-item:hover {
+            transform: translateY(-5px);
+            border-color: var(--lavender);
+        }
+
+
+        .info-icon {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: var(--soft-pink);
+            color: var(--charcoal);
+
+            margin-bottom: 17px;
+            font-size: 20px;
+        }
+
+
+        .info-item h3 {
+            font-family: "Poppins", sans-serif;
+            color: var(--charcoal);
+            font-size: 15px;
+            margin-bottom: 9px;
+        }
+
+
+        .info-item p {
+            font-family: "Poppins", sans-serif;
+            color: #716A70;
+            font-size: 13px;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+
+        /* =========================
+           ACTIVE ABOUT NAV
+        ========================== */
+
+        .nav-links a.active {
+            color: var(--dusty-rose) !important;
+        }
+
+
+        .nav-links a.active::after {
+            width: 100% !important;
+            background: var(--dusty-rose) !important;
+        }
+
+
+        /* =========================
+           RESPONSIVE
+        ========================== */
+
+        @media (max-width: 900px) {
+
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 50px;
+            }
+
+            .about-title {
+                font-size: 3.2rem;
+            }
+
+            .about-stats {
+                max-width: 650px;
+            }
+        }
+
+
+        @media (max-width: 650px) {
+
+            .about-page {
+                padding: 70px 22px;
+            }
+
+            .about-title {
+                font-size: 2.7rem;
+            }
+
+            .about-description {
+                font-size: 14px;
+            }
+
+            .about-stats {
+                grid-template-columns: 1fr;
+            }
+
+            .about-info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-stat {
+                min-height: 110px;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         BACKGROUND
+    ========================== -->
+
+    <div class="bg-decor" aria-hidden="true">
+        <span class="decor-blob blob-1"></span>
+        <span class="decor-blob blob-2"></span>
+    </div>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="navbar" id="navbar">
+
+        <div class="nav-inner">
+
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                Laiba <span>Batool</span>
+            </a>
+
+
+            <!-- Navigation -->
+            <nav class="nav-links" id="navLinks">
+
+                <a href="index.html">Home</a>
+
+                <!-- ABOUT ACTIVE -->
+                <a href="about.html" class="active">About</a>
+
+                <a href="skills.html">Skills</a>
+
+                <a href="projects.html">Projects</a>
+
+                <a href="resume.html">Resume</a>
+
+                <a href="contact.html">Contact</a>
+
+            </nav>
+
+
+            <!-- Navbar Actions -->
+            <div class="nav-actions">
+
+                <button
+                    id="themeToggle"
+                    class="theme-toggle"
+                    aria-label="Toggle dark mode">
+                    🌙
+                </button>
+
+
+                <a
+                    href="contact.html"
+                    class="btn btn-small btn-primary">
+                    Let's Talk →
+                </a>
+
+
+                <button
+                    class="nav-burger"
+                    id="navBurger"
+                    aria-label="Open menu"
+                    aria-expanded="false">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         ABOUT PAGE
+    ========================== -->
+
+    <main class="about-page">
+
+        <div class="about-container">
+
+
+            <!-- MAIN ABOUT -->
+
+            <div class="about-grid">
+
+
+                <!-- LEFT -->
+
+                <div>
+
+                    <p class="about-label">
+                        Get to know me
+                    </p>
+
+
+                    <h1 class="about-title">
+                        A Quick <span>Intro</span>
+                    </h1>
+
+
+                    <p class="about-description">
+                        I'm an IT student with two years of hands-on
+                        experience in Shopify order fulfillment and
+                        e-commerce operations — where I learned how
+                        real businesses run on clean data and fast
+                        interfaces.
+                    </p>
+
+
+                    <p class="about-description">
+                        Today I combine that background with SQL,
+                        Excel, HTML, CSS, JavaScript and Python to
+                        build interfaces that look good and dashboards
+                        that actually answer questions.
+                    </p>
+
+
+                    <div class="about-buttons">
+
+                        <a
+                            href="resume.html"
+                            class="about-btn about-btn-primary">
+                            View Resume →
+                        </a>
+
+
+                        <a
+                            href="contact.html"
+                            class="about-btn about-btn-outline">
+                            Let's Connect
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RIGHT STATS -->
+
+                <div class="about-stats">
+
+
+                    <div class="about-stat">
+
+                        <div class="stat-number">
+                            2+
+                        </div>
+
+                        <div class="stat-text">
+                            Years experience
+                        </div>
+
+                    </div>
+
+
+                    <div class="about-stat">
+
+                        <div class="stat-number">
+                            20+
+                        </div>
+
+                        <div class="stat-text">
+                            Projects completed
+                        </div>
+
+                    </div>
+
+
+                    <div class="about-stat">
+
+                        <div class="stat-number">
+                            10+
+                        </div>
+
+                        <div class="stat-text">
+                            Tools &amp; technologies
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 WHAT I BRING
+            ========================== -->
+
+            <div class="about-info">
+
+                <h2 class="about-info-title">
+                    What I Bring
+                </h2>
+
+
+                <div class="about-info-grid">
+
+
+                    <!-- Frontend -->
+
+                    <div class="info-item">
+
+                        <div class="info-icon">
+                            💻
+                        </div>
+
+                        <h3>
+                            Frontend Development
+                        </h3>
+
+                        <p>
+                            Creating clean, responsive and
+                            user-friendly interfaces using HTML,
+                            CSS and JavaScript.
+                        </p>
+
+                    </div>
+
+
+                    <!-- Data -->
+
+                    <div class="info-item">
+
+                        <div class="info-icon">
+                            📊
+                        </div>
+
+                        <h3>
+                            Data &amp; Analytics
+                        </h3>
+
+                        <p>
+                            Using SQL, Excel and Python to organize
+                            data, find useful insights and support
+                            better decisions.
+                        </p>
+
+                    </div>
+
+
+                    <!-- E-Commerce -->
+
+                    <div class="info-item">
+
+                        <div class="info-icon">
+                            🛍️
+                        </div>
+
+                        <h3>
+                            E-Commerce Operations
+                        </h3>
+
+                        <p>
+                            Hands-on experience with Shopify orders,
+                            fulfillment, returns and backend
+                            operations.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="section-inner footer-inner">
+
+            <p>
+                🌷 Designed &amp; built by Laiba Batool
+            </p>
+
+            <p>
+                &copy;
+                <span id="year"></span>
+                All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Scroll To Top -->
+
+    <button
+        id="scrollTop"
+        class="scroll-top"
+        aria-label="Scroll to top">
+        ↑
+    </button>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

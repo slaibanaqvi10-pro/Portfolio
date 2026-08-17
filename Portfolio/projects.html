@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Projects | Laiba Batool</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        /* =========================
+           COLOR PALETTE
+        ========================== */
+
+        :root {
+            --dusty-rose: #C98FA3;
+            --soft-pink: #E8C7D1;
+            --lavender: #C9B8D9;
+            --off-white: #FAF7F5;
+            --charcoal: #29252A;
+        }
+
+
+        /* =========================
+           PAGE
+        ========================== */
+
+        html {
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            overflow-x: hidden;
+            background: var(--off-white);
+            color: var(--charcoal);
+        }
+
+
+        /* =========================
+           ACTIVE NAV
+        ========================== */
+
+        .nav-links a.active {
+            color: var(--dusty-rose) !important;
+        }
+
+        .nav-links a.active::after {
+            width: 100% !important;
+            background: var(--dusty-rose) !important;
+        }
+
+
+        /* =========================
+           PROJECTS SECTION
+        ========================== */
+
+        .projects-page {
+            min-height: calc(100vh - 155px);
+            background: var(--off-white);
+
+            display: flex;
+            align-items: center;
+
+            padding: 55px 7%;
+        }
+
+        .projects-container {
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+
+        /* =========================
+           HEADING
+        ========================== */
+
+        .projects-label {
+            margin: 0 0 10px;
+
+            color: var(--dusty-rose);
+
+            font-family: "Poppins", sans-serif;
+            font-size: 12px;
+            font-weight: 700;
+
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .projects-title {
+            margin: 0 0 35px;
+
+            color: var(--charcoal);
+
+            font-family: "Playfair Display", serif;
+            font-size: clamp(2.6rem, 5vw, 3.8rem);
+            font-weight: 700;
+        }
+
+        .projects-title span {
+            color: var(--dusty-rose);
+        }
+
+
+        /* =========================
+           PROJECT GRID
+        ========================== */
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+
+        /* =========================
+           PROJECT CARD
+        ========================== */
+
+        .project-card {
+            min-height: 315px;
+
+            display: flex;
+            flex-direction: column;
+
+            padding: 27px;
+
+            background: #ffffff;
+
+            border: 1px solid var(--soft-pink);
+            border-radius: 20px;
+
+            box-shadow:
+                0 8px 25px rgba(41, 37, 42, 0.06);
+
+            transition:
+                transform 0.35s ease,
+                box-shadow 0.35s ease,
+                border-color 0.35s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+
+            border-color: var(--dusty-rose);
+
+            box-shadow:
+                0 20px 40px rgba(201, 143, 163, 0.20);
+        }
+
+
+        /* =========================
+           PROJECT CONTENT
+        ========================== */
+
+        .project-card h3 {
+            margin: 0 0 14px;
+
+            color: var(--charcoal);
+
+            font-family: "Playfair Display", serif;
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        .project-card p {
+            margin: 0 0 18px;
+
+            color: #6F676C;
+
+            font-family: "Poppins", sans-serif;
+            font-size: 12.5px;
+            line-height: 1.7;
+        }
+
+
+        /* =========================
+           TECH TAGS
+        ========================== */
+
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 7px;
+
+            margin-bottom: 20px;
+        }
+
+        .tech-tags span {
+            padding: 5px 10px;
+
+            background: var(--soft-pink);
+
+            border: 1px solid rgba(201, 143, 163, 0.3);
+            border-radius: 20px;
+
+            color: var(--charcoal);
+
+            font-family: "Poppins", sans-serif;
+            font-size: 10px;
+            font-weight: 500;
+        }
+
+
+        /* =========================
+           GITHUB BUTTON
+        ========================== */
+
+        .project-links {
+            margin-top: auto;
+        }
+
+        .project-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 8px 16px;
+
+            border: 1px solid var(--dusty-rose);
+            border-radius: 20px;
+
+            background: transparent;
+
+            color: var(--dusty-rose);
+
+            font-family: "Poppins", sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+
+            text-decoration: none;
+
+            transition: all 0.3s ease;
+        }
+
+        .project-links a:hover {
+            background: var(--dusty-rose);
+            color: var(--off-white);
+
+            transform: translateY(-2px);
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================== */
+
+        .footer {
+            background: var(--off-white);
+            border-top: 1px solid var(--soft-pink);
+        }
+
+        .footer-inner {
+            color: var(--charcoal);
+        }
+
+
+        /* =========================
+           RESPONSIVE
+        ========================== */
+
+        @media (max-width: 950px) {
+
+            .projects-page {
+                min-height: auto;
+                padding: 70px 7%;
+            }
+
+            .projects-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            body {
+                overflow-y: auto;
+            }
+        }
+
+
+        @media (max-width: 650px) {
+
+            .projects-page {
+                padding: 55px 20px 65px;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .project-card {
+                min-height: auto;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         BACKGROUND DECORATION
+    ========================== -->
+
+    <div class="bg-decor" aria-hidden="true">
+        <span class="decor-blob blob-1"></span>
+        <span class="decor-blob blob-2"></span>
+    </div>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="navbar" id="navbar">
+
+        <div class="nav-inner">
+
+
+            <!-- Logo -->
+
+            <a href="index.html" class="logo">
+                Laiba <span>Batool</span>
+            </a>
+
+
+            <!-- Navigation -->
+
+            <nav class="nav-links" id="navLinks">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="skills.html">
+                    Skills
+                </a>
+
+                <a href="projects.html" class="active">
+                    Projects
+                </a>
+
+                <a href="resume.html">
+                    Resume
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </nav>
+
+
+            <!-- Navbar Actions -->
+
+            <div class="nav-actions">
+
+                <button
+                    id="themeToggle"
+                    class="theme-toggle"
+                    aria-label="Toggle dark mode">
+                    🌙
+                </button>
+
+
+                <a
+                    href="contact.html"
+                    class="btn btn-small btn-primary">
+                    Let's Talk →
+                </a>
+
+
+                <button
+                    class="nav-burger"
+                    id="navBurger"
+                    aria-label="Open menu"
+                    aria-expanded="false">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         PROJECTS
+    ========================== -->
+
+    <main class="projects-page">
+
+        <div class="projects-container">
+
+
+            <p class="projects-label">
+                Selected Work
+            </p>
+
+
+            <h1 class="projects-title">
+                My <span>Projects</span>
+            </h1>
+
+
+            <div class="projects-grid">
+
+
+                <!-- =========================
+                     CHARITY CONNECT
+                ========================== -->
+
+                <article class="project-card">
+
+                    <h3>
+                        Charity Connect
+                    </h3>
+
+                    <p>
+                        A Django-based web application that enables users
+                        to donate online, register as volunteers, and
+                        explore charity campaigns. Includes secure
+                        authentication, an admin dashboard, donation
+                        tracking, and a responsive interface.
+                    </p>
+
+                    <div class="tech-tags">
+                        <span>Python</span>
+                        <span>Django</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>SQLite</span>
+                    </div>
+
+                    <div class="project-links">
+
+                        <a
+                            href="https://github.com/slaibanaqvi10-pro/Charity-Connect-website"
+                            target="_blank"
+                            rel="noopener noreferrer">
+
+                            GitHub ↗
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- =========================
+                     FOODPANDA CLONE
+                ========================== -->
+
+                <article class="project-card">
+
+                    <h3>
+                        FoodPanda Clone App
+                    </h3>
+
+                    <p>
+                        A food delivery mobile app built with Flutter,
+                        featuring login/signup, restaurant and food
+                        browsing, cart management, full CRUD, calorie
+                        tracking, and BMI calculation for a
+                        health-conscious ordering experience.
+                    </p>
+
+                    <div class="tech-tags">
+                        <span>Flutter</span>
+                        <span>Dart</span>
+                        <span>Firebase</span>
+                        <span>CRUD</span>
+                    </div>
+
+                    <div class="project-links">
+
+                        <a
+                            href="https://github.com/slaibanaqvi10-pro/Food-Panda-Clone"
+                            target="_blank"
+                            rel="noopener noreferrer">
+
+                            GitHub ↗
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- =========================
+                     CALCULATOR
+                ========================== -->
+
+                <article class="project-card">
+
+                    <h3>
+                        Calculator
+                    </h3>
+
+                    <p>
+                        A clean and responsive calculator built with
+                        vanilla JavaScript, covering core arithmetic
+                        operations with a simple and intuitive
+                        interface.
+                    </p>
+
+                    <div class="tech-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <div class="project-links">
+
+                        <a
+                            href="https://github.com/slaibanaqvi10-pro/codealpha_tasks/tree/main/calculator_task"
+                            target="_blank"
+                            rel="noopener noreferrer">
+
+                            GitHub ↗
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="section-inner footer-inner">
+
+            <p>
+                Designed &amp; built by Laiba Batool
+            </p>
+
+            <p>
+                &copy;
+                <span id="year"></span>
+                All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================
+         SCROLL TO TOP
+    ========================== -->
+
+    <button
+        id="scrollTop"
+        class="scroll-top"
+        aria-label="Scroll to top">
+        ↑
+    </button>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
