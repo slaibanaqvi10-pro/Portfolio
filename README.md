@@ -3,10 +3,15 @@
 A clean, modern, and elegant personal portfolio website showcasing my work as a **Frontend Developer & Aspiring Data Analyst**.
 
 🔗 **Live Site:** [http://127.0.0.1:5500/index.html#projects](https://github.com/slaibanaqvi10-pro/Portfolio/)
-<img width="1349" height="644" alt="WhatsApp Image 2026-08-14 at 12 40 08 AM" src="https://github.com/user-attachments/assets/1f75f650-e633-4f92-b7d9-f353774535b2" />
-<img width="1326" height="638" alt="WhatsApp Image 2026-08-14 at 12 40 32 AM" src="https://github.com/user-attachments/assets/44d89657-eed2-4c91-a682-e50033b981a0" />
-<img width="1325" height="630" alt="WhatsApp Image 2026-08-14 at 12 41 15 AM" src="https://github.com/user-attachments/assets/2c72e402-5a53-42f5-803f-924989e87c16" />
-<img width="1316" height="630" alt="WhatsApp Image 2026-08-14 at 12 41 38 AM" src="https://github.com/user-attachments/assets/adf1b369-99a6-4c77-9d8c-c2e3b514d768" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/639732c9-1d45-4619-8048-cefda2a94e39" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/af20c563-a4b7-43bf-a771-cfb96271dc8f" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/3d889d3b-01d7-4211-9b34-faf6fdd55590" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/ecc7d660-636c-4289-8ebb-f0f6a13ce60e" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/676c2e41-9186-47db-af4a-06403ba2e35e" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/97029aa6-f609-4c44-89be-5f3a070fb9b9" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/28a7bbbd-6489-43dc-a8a6-9bcdead1ebdb" />
+
+
 
 
 
