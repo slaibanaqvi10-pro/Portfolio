@@ -2,7 +2,7 @@
 
 A clean, modern, and elegant personal portfolio website showcasing my work as a **Frontend Developer & Aspiring Data Analyst**.
 
-🔗 **Live Site:** (https://portfolio-1-iota-snowy.vercel.app)
+🔗 **Live Site:** https://portfolio-1-lulnlc3lx-slaibanaqvi10-7830s-projects.vercel.app/
 <img width="1340" height="636" alt="image" src="https://github.com/user-attachments/assets/f661f298-e3db-49e9-bd1e-d0215d9324a7" />
 <img width="1331" height="630" alt="image" src="https://github.com/user-attachments/assets/592779ee-752c-47b2-9c0a-cda491048651" />
 <img width="1319" height="634" alt="image" src="https://github.com/user-attachments/assets/f9df8186-26bc-4119-9385-3f5f7fb8610f" />
