@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Resume | Laiba Batool</title>
+
+    <!-- Favicon -->
+    <link
+        rel="icon"
+        type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='25' fill='%23C9B8D9'/%3E%3Ctext x='50' y='68' text-anchor='middle' font-size='55' font-family='Georgia' font-weight='bold' fill='%23FAF7F5'%3ELB%3C/text%3E%3C/svg%3E"
+    >
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+
+
+    <style>
+
+        /* =========================
+           RESUME PAGE
+        ========================== */
+
+        .resume-page {
+            min-height: calc(100vh - 155px);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 60px 7%;
+
+            background: var(--off-white);
+        }
+
+
+        .resume-container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+
+        /* =========================
+           RESUME CARD
+        ========================== */
+
+        .resume-card {
+            position: relative;
+
+            padding: 65px 70px;
+
+            text-align: center;
+
+            background: #ffffff;
+
+            border: 1px solid var(--soft-pink);
+            border-radius: 28px;
+
+            box-shadow:
+                0 15px 45px rgba(41, 37, 42, 0.08);
+
+            overflow: hidden;
+
+            animation: resumeAppear 0.8s ease-out;
+        }
+
+
+        /* Soft decorative circle */
+
+        .resume-card::before {
+            content: "";
+
+            position: absolute;
+
+            width: 220px;
+            height: 220px;
+
+            top: -110px;
+            right: -80px;
+
+            border-radius: 50%;
+
+            background: var(--soft-pink);
+
+            opacity: 0.35;
+
+            animation: floatingShape 5s ease-in-out infinite;
+        }
+
+
+        .resume-card::after {
+            content: "";
+
+            position: absolute;
+
+            width: 170px;
+            height: 170px;
+
+            bottom: -90px;
+            left: -60px;
+
+            border-radius: 50%;
+
+            background: var(--lavender);
+
+            opacity: 0.30;
+
+            animation: floatingShape 6s ease-in-out infinite reverse;
+        }
+
+
+        /* Keep content above decorations */
+
+        .resume-card > * {
+            position: relative;
+            z-index: 2;
+        }
+
+
+        /* =========================
+           RESUME LABEL
+        ========================== */
+
+        .resume-label {
+            margin-bottom: 12px;
+
+            color: var(--dusty-rose);
+
+            font-family: "Poppins", sans-serif;
+
+            font-size: 12px;
+            font-weight: 700;
+
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+
+        /* =========================
+           TITLE
+        ========================== */
+
+        .resume-card h1 {
+            margin: 0 0 18px;
+
+            color: var(--charcoal);
+
+            font-family: "Playfair Display", serif;
+
+            font-size: clamp(2.8rem, 5vw, 4.2rem);
+
+            line-height: 1.1;
+        }
+
+
+        .resume-card h1 span {
+            color: var(--dusty-rose);
+        }
+
+
+        /* =========================
+           DESCRIPTION
+        ========================== */
+
+        .resume-card p {
+            max-width: 650px;
+
+            margin: 0 auto 30px;
+
+            color: #6F676C;
+
+            font-family: "Poppins", sans-serif;
+
+            font-size: 14px;
+
+            line-height: 1.8;
+        }
+
+
+        /* =========================
+           DOWNLOAD BUTTON
+        ========================== */
+
+        .resume-download {
+            display: inline-flex;
+
+            align-items: center;
+            justify-content: center;
+
+            gap: 8px;
+
+            padding: 12px 25px;
+
+            border-radius: 25px;
+
+            background: var(--dusty-rose);
+
+            color: var(--off-white);
+
+            font-family: "Poppins", sans-serif;
+
+            font-size: 13px;
+            font-weight: 600;
+
+            text-decoration: none;
+
+            box-shadow:
+                0 8px 20px rgba(201, 143, 163, 0.25);
+
+            transition:
+                transform 0.3s ease,
+                box-shadow 0.3s ease,
+                background 0.3s ease;
+        }
+
+
+        .resume-download:hover {
+            transform: translateY(-4px);
+
+            background: var(--charcoal);
+
+            box-shadow:
+                0 12px 25px rgba(41, 37, 42, 0.20);
+        }
+
+
+        /* =========================
+           ACTIVE NAV
+        ========================== */
+
+        .nav-links a.active {
+            color: var(--dusty-rose) !important;
+        }
+
+        .nav-links a.active::after {
+            width: 100% !important;
+
+            background: var(--dusty-rose) !important;
+        }
+
+
+        /* =========================
+           ANIMATIONS
+        ========================== */
+
+        @keyframes resumeAppear {
+
+            from {
+                opacity: 0;
+                transform: translateY(25px) scale(0.98);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+
+        }
+
+
+        @keyframes floatingShape {
+
+            0%,
+            100% {
+                transform: translate(0, 0);
+            }
+
+            50% {
+                transform: translate(-12px, 12px);
+            }
+
+        }
+
+
+        /* =========================
+           RESPONSIVE
+        ========================== */
+
+        @media (max-width: 700px) {
+
+            .resume-page {
+                padding: 50px 20px;
+            }
+
+            .resume-card {
+                padding: 50px 25px;
+                border-radius: 22px;
+            }
+
+            .resume-card h1 {
+                font-size: 2.7rem;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         MOUSE LAVENDER GLOW
+    ========================== -->
+
+    <div class="mouse-glow" id="mouseGlow"></div>
+
+
+    <!-- =========================
+         BACKGROUND DECORATION
+    ========================== -->
+
+    <div class="bg-decor" aria-hidden="true">
+
+        <span class="decor-blob blob-1"></span>
+
+        <span class="decor-blob blob-2"></span>
+
+    </div>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="navbar" id="navbar">
+
+        <div class="nav-inner">
+
+
+            <!-- Navigation -->
+
+            <nav class="nav-links" id="navLinks">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="skills.html">
+                    Skills
+                </a>
+
+                <a href="projects.html">
+                    Projects
+                </a>
+
+                <!-- ACTIVE RESUME -->
+
+                <a href="resume.html" class="active">
+                    Resume
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </nav>
+
+
+            <!-- Navbar Actions -->
+
+            <div class="nav-actions">
+
+
+                <!-- Dark Mode -->
+
+                <button
+                    id="themeToggle"
+                    class="theme-toggle"
+                    aria-label="Toggle dark mode">
+
+                    🌙
+
+                </button>
+
+
+                <!-- Let's Talk -->
+
+                <a
+                    href="contact.html"
+                    class="btn btn-small btn-primary">
+
+                    Let's Talk →
+
+                </a>
+
+
+                <!-- Mobile Menu -->
+
+                <button
+                    class="nav-burger"
+                    id="navBurger"
+                    aria-label="Open menu"
+                    aria-expanded="false">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         RESUME SECTION
+    ========================== -->
+
+    <main class="resume-page">
+
+        <div class="resume-container">
+
+
+            <div class="resume-card">
+
+
+                <p class="resume-label">
+                    My Professional Profile
+                </p>
+
+
+                <h1>
+                    My <span>Resume</span>
+                </h1>
+
+
+                <p>
+                    Interested in working together? Download my resume
+                    to learn more about my skills, experience,
+                    education, and professional background.
+                </p>
+
+
+                <a
+                    href="Laiba_Batool_CV.pdf"
+                    download
+                    class="resume-download">
+
+                    Download CV ↓
+
+                </a>
+
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="section-inner footer-inner">
+
+            <p>
+                Designed &amp; built by Laiba Batool
+            </p>
+
+            <p>
+                &copy;
+                <span id="year"></span>
+                All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================
+         SCROLL TO TOP
+    ========================== -->
+
+    <button
+        id="scrollTop"
+        class="scroll-top"
+        aria-label="Scroll to top">
+
+        ↑
+
+    </button>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
