@@ -2,14 +2,12 @@
 
 A clean, modern, and elegant personal portfolio website showcasing my work as a **Frontend Developer & Aspiring Data Analyst**.
 
-🔗 **Live Site:** https://portfolio-1-lulnlc3lx-slaibanaqvi10-7830s-projects.vercel.app/
-<img width="1340" height="636" alt="image" src="https://github.com/user-attachments/assets/f661f298-e3db-49e9-bd1e-d0215d9324a7" />
-<img width="1331" height="630" alt="image" src="https://github.com/user-attachments/assets/592779ee-752c-47b2-9c0a-cda491048651" />
-<img width="1319" height="634" alt="image" src="https://github.com/user-attachments/assets/f9df8186-26bc-4119-9385-3f5f7fb8610f" />
-<img width="1337" height="639" alt="image" src="https://github.com/user-attachments/assets/7714d2f3-5b7f-46f8-adea-9e7b8de025fa" />
-<img width="1321" height="633" alt="image" src="https://github.com/user-attachments/assets/ce368595-8577-4356-b34e-4c9a3de56c6a" />
-<img width="1332" height="593" alt="image" src="https://github.com/user-attachments/assets/57ec7881-1fb3-458b-a57f-e29a3468ca8f" />
-<img width="1325" height="599" alt="image" src="https://github.com/user-attachments/assets/50683ab5-d06a-40bf-a590-6091b86c9d79" />
+🔗 **Live Site:** https://laibaportfolio-azure.vercel.app/
+<img width="1317" height="640" alt="image" src="https://github.com/user-attachments/assets/24ad9bf0-a413-414a-87e1-348a37b1dad0" />
+<img width="1335" height="628" alt="image" src="https://github.com/user-attachments/assets/f448d8b9-7c33-4bb7-af37-a6154a600ac8" />
+<img width="1334" height="634" alt="image" src="https://github.com/user-attachments/assets/0445c89d-af66-4788-9ed0-306ea63142a2" />
+<img width="1324" height="636" alt="image" src="https://github.com/user-attachments/assets/78059396-3c31-4e51-843a-b377dbc0100d" />
+<img width="1304" height="713" alt="image" src="https://github.com/user-attachments/assets/72fee616-b988-4a30-a09f-cd7eedc4eb8c" />
 
 
 
